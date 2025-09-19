@@ -429,40 +429,38 @@ h4{
     0 0 200px var(--color);
 } 
 
-@media (max-width: 1380px){
-        .carousel__item{
+/* ========================= */
+/* 1380px */
+/* ========================= */
+@media (max-width: 1380px) {
+    .carousel__item {
         flex: 0 0 calc(100% / 2);
     }
 
-    .title::before{
-    left:50%;
-    right: 50%;
-    transform: translate(-50%, -3%); 
-}
+    .title::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
+/* ========================= */
+/* 1140px */
+/* ========================= */
 @media (max-width: 1140px) {
-
-    .title::before{
-    left:50%;
-    right: 50%;
-    transform: translate(-25%, 3%); 
-}
-
-    .description{
+    .description {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .about, .me{
+
+    .about, .me {
         margin-bottom: 50px;
     }
-    .about{
+
+    .about {
         margin-top: 0;
     }
-    .title::before{
-        left: 49%;
-    }
+
     .carousel__btn.prev {
         left: 5px;
     }
@@ -471,319 +469,127 @@ h4{
         right: 5px; 
     }
 
-    .carousel__item{
+    .carousel__item {
         flex: 0 0 calc(100% / 2);
     }
 
-    .carousel__item p{
+    .carousel__item p {
         font-size: 12px;
     }
 
-    .card{
+    .card {
         width: 70%;
         height: auto;
     }
 
-    .about-inf .me{
+    .about-inf .me {
         width: 400px;
         height: auto;
     }
 
-    .about_title{
+    .about_title {
         font-size: 25px;
     }
 }
 
+/* ========================= */
+/* 960px */
+/* ========================= */
 @media (max-width: 960px) {
-    .card img{
+    .card img {
         width: 120px;
     }
 
-        .about-inf .me{
+    .about-inf .me {
         width: 300px;
         height: auto;
     }
 
-    .about{
+    .about {
         padding: 10px;
     }
 
-    .about-par{
+    .about-par {
         font-size: 17px;
     }
 
-    .about_title{
+    .about_title {
         font-size: 23px;
     }
 }
 
-@media (max-width: 720px){
-    .title{
+/* ========================= */
+/* 720px */
+/* ========================= */
+@media (max-width: 720px) {
+    .title {
         font-size: 22px;
     }
-.card img{
-    width: 100px;
-}
-
-.skills-par{
-    font-size: 14px;
-}
-
-.card h3{
-    font-size: 19px;
-}
-
-.card{
-    padding: 6;
-}
-
-.carousel__item {
-flex: 0 0 100%; 
-}
-
-.about_title{
-font-size: 20px;
-}
-
-.about-inf{
-font-size: 13px;
-}
-
-.about .me{
-    width: 280px;
-    height: 500px;
-}
-
-.country{
-    font-size: 70px;
-}
-
-.title::before{
-    height: 30px;
-    width: 30px;
-}
-
-.about_title::before{
-    left:2.5%;
-    height: 27px;
-    width: 27px;
-}
-}
-
-@media (max-width: 632px) {
-    nav{
-        align-items: center;
-        gap: 20px;
-    }
-    .navbar .links{
-        font-size: 17px;
-    }
-    .title {
-        font-size: 18px;
-    }
 
     .title::before {
-        height: 25px;
-        width: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 30px;
+        width: 30px;
     }
 
-.about h3{
-    font-size: 23px;
-}
+    .card img {
+        width: 100px;
+    }
 
-h1{
-    font-size: 36px;
-}
+    .skills-par {
+        font-size: 14px;
+    }
 
-.cat{
-    width: 60px;
-    height: 60px;
-}
+    .card h3 {
+        font-size: 19px;
+    }
 
-    h1::before {
-        height: 22px;
-        width: 22px;
+    .card {
+        padding: 6px;
     }
 
     .carousel__item {
         flex: 0 0 100%; 
-        margin: 0; 
     }
 
-    .carousel__item img {
-        height: 220px; 
+    .about_title {
+        font-size: 20px;
     }
 
-    .carousel__item h3 {
-        font-size: 16px;
-    }
-
-    
-    .card {
-        width: 80%;  
-        padding: 10px;
-        height: 92%;
-    }
-
-    .card img {
-        width: 70px;
-    }
-
-    .skills-par {
-        font-size: 12px;
-        text-align: left;
-    }
-
-    
     .about-inf {
-        flex-direction: column;  
-        align-items: center;
-        text-align: center;
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .description .me {
-        width: 400px;
-        height: 300px;
+    .about .me {
+        width: 220px;
+        height: auto;
     }
 
     .country {
-        font-size: 50px;
-        background-size: 400px 70px;
-    }
-    
-    .about-inf .me{
-    display: none;
-    }
-    
-    .about-par{
-        text-align: left;
+        font-size: 60px;
     }
 
-    .about_title::before{
-    left:13%;
-    height: 27px;
-    width: 27px;
+    .about_title::before {
+        left: 10%;
+        height: 27px;
+        width: 27px;
+    }
 }
 
-.about-inf h4{
-    text-align: left;
-}
-
-
-}
-
-@media (max-width: 600px) {
-    nav{
-        align-items: center;
-        gap: 20px;
-    }
-    .navbar .links{
-        font-size: 17px;
-    }
-    .title {
-        font-size: 18px;
-    }
-
-    .title::before {
-        height: 25px;
-        width: 25px;
-    }
-
-.about h3{
-    font-size: 23px;
-}
-
-h1{
-    font-size: 36px;
-}
-
-.cat{
-    width: 60px;
-    height: 60px;
-}
-
-    h1::before {
-        height: 22px;
-        width: 22px;
-    }
-
-    .carousel__item {
-        flex: 0 0 100%; 
-        margin: 0; 
-    }
-
-    .carousel__item img {
-        height: 220px; 
-    }
-
-    .carousel__item h3 {
-        font-size: 16px;
-    }
-
-    
-    .card {
-        width: 80%;  
-        padding: 10px;
-        height: 92%;
-    }
-
-    .card img {
-        width: 70px;
-    }
-
-    .skills-par {
-        font-size: 12px;
-        text-align: left;
-    }
-
-    
-    .about-inf {
-        flex-direction: column;  
-        align-items: center;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .description .me {
-        width: 400px;
-        height: 300px;
-    }
-
-    .country {
-        font-size: 50px;
-        background-size: 400px 70px;
-    }
-    
-    .about-inf .me{
-    display: none;
-    }
-    
-    .about-par{
-        text-align: left;
-    }
-
-    .about_title::before{
-    left:13%;
-    height: 27px;
-    width: 27px;
-}
-
-.about-inf h4{
-    text-align: left;
-}
-
-
-}
-
+/* ========================= */
+/* 540px (телефоны) */
+/* ========================= */
 @media (max-width: 540px) {
-    nav{
+    nav {
         align-items: center;
-        gap: 20px;
+        gap: 15px;
     }
-    .navbar .links{
-        font-size: 17px;
+
+    .navbar .links {
+        font-size: 16px;
     }
+
     .title {
         font-size: 18px;
     }
@@ -791,20 +597,13 @@ h1{
     .title::before {
         height: 25px;
         width: 25px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-.about h3{
-    font-size: 23px;
-}
-
-h1{
-    font-size: 36px;
-}
-
-.cat{
-    width: 60px;
-    height: 60px;
-}
+    h1 {
+        font-size: 30px;
+    }
 
     h1::before {
         height: 22px;
@@ -817,18 +616,18 @@ h1{
     }
 
     .carousel__item img {
-        height: 220px; 
+        max-width: 100%;
+        height: auto; 
     }
 
     .carousel__item h3 {
         font-size: 16px;
     }
 
-    
     .card {
-        width: 80%;  
+        width: 90%;  
         padding: 10px;
-        height: 92%;
+        height: auto;
     }
 
     .card img {
@@ -840,7 +639,6 @@ h1{
         text-align: left;
     }
 
-    
     .about-inf {
         flex-direction: column;  
         align-items: center;
@@ -848,36 +646,27 @@ h1{
         font-size: 12px;
     }
 
-    .description .me {
-        width: 400px;
-        height: 300px;
+    .about-inf .me {
+        display: none; /* скрываем фото на телефонах */
     }
 
-    .country {
-        font-size: 50px;
-        background-size: 400px 70px;
-    }
-    
-    .about-inf .me{
-    display: none;
-    }
-    
-    .about-par{
+    .about-par {
         text-align: left;
     }
 
-    .about_title::before{
-    left:13%;
-    height: 27px;
-    width: 27px;
+    .about_title::before {
+        left: 10%;
+        height: 25px;
+        width: 25px;
+    }
+
+    .country {
+        font-size: 40px;
+        background-size: contain;
+    }
 }
 
-.about-inf h4{
-    text-align: left;
-}
 
-
-}
 
 
 
