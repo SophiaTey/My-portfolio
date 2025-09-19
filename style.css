@@ -570,6 +570,109 @@ font-size: 13px;
 }
 }
 
+@media (max-width: 632px) {
+    nav{
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar .links{
+        font-size: 17px;
+    }
+    .title {
+        font-size: 18px;
+    }
+
+    .title::before {
+        height: 25px;
+        width: 25px;
+    }
+
+.about h3{
+    font-size: 23px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.cat{
+    width: 60px;
+    height: 60px;
+}
+
+    h1::before {
+        height: 22px;
+        width: 22px;
+    }
+
+    .carousel__item {
+        flex: 0 0 100%; 
+        margin: 0; 
+    }
+
+    .carousel__item img {
+        height: 220px; 
+    }
+
+    .carousel__item h3 {
+        font-size: 16px;
+    }
+
+    
+    .card {
+        width: 80%;  
+        padding: 10px;
+        height: 92%;
+    }
+
+    .card img {
+        width: 70px;
+    }
+
+    .skills-par {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    
+    .about-inf {
+        flex-direction: column;  
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .description .me {
+        width: 400px;
+        height: 300px;
+    }
+
+    .country {
+        font-size: 50px;
+        background-size: 400px 70px;
+    }
+    
+    .about-inf .me{
+    display: none;
+    }
+    
+    .about-par{
+        text-align: left;
+    }
+
+    .about_title::before{
+    left:13%;
+    height: 27px;
+    width: 27px;
+}
+
+.about-inf h4{
+    text-align: left;
+}
+
+
+}
+
 @media (max-width: 600px) {
     nav{
         align-items: center;
@@ -775,6 +878,7 @@ h1{
 
 
 }
+
 
 
 
